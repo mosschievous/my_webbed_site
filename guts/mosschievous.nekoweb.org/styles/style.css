@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Exo 2", sans-serif;
+    background-color: black;
+}
+
+h1 {
+    color: yellow;
+    font-size: 60px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+.box1 {
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/9nabaca_tile.jpg');
+    height: 190px;
+    min-width: 750px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image-rendering: pixelated;
+    border: 1px solid white;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
