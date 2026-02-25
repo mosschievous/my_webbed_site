@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: deploy2nekoweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      # your build step here
+        
+      - name: deploy2nekoweb
+        uses: indiefellas/deploy2nekoweb@main
+        with:
+          nekoweb-api-key: ${{ secrets.d0a61629623050d37dd5e9e979c52d20d50d27761715553ff81386e2c4a5e977 }}
+          nekoweb-domain: 'mosschievous.nekoweb.org'
+          nekoweb-username: 'mosschievous'
+          directory: 'guts'
