@@ -13,7 +13,7 @@ jobs:
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with:
-          nekoweb-api-key: ${{ secrets.d0a61629623050d37dd5e9e979c52d20d50d27761715553ff81386e2c4a5e977 }}
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'mosschievous.nekoweb.org'
           nekoweb-username: 'mosschievous'
           directory: 'guts'
